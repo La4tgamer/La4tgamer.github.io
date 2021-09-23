@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>使用you-get下载视频 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="​    在寻找视频素材的时候，网页端常常都会遇到无法下载视频的问题（免费视频），例如在bilibili等平台上，可以通过使用you-get工具下载视频。  环境配置需要使用python环境，这里使用anaconda配置环境进行管理 在anaconda官网安装anaconda，安装按照流程进行即可。  安装流程这里以anaconda为例 使用命令conda create -n xxx python">
+  <meta name="description" content="​    在寻找视频素材的时候，网页端常常都会遇到无法下载视频的问题（免费视频），例如在bilibili等平台上，可以通过使用you-get工具下载视频。  环境配置需要使用python环境，这里使用anaconda配置环境进行管理（有python环境也可） 在anaconda官网安装anaconda，安装按照流程进行即可。  安装流程这里以anaconda为例 使用命令conda create">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用you-get下载视频">
 <meta property="og:url" content="http://example.com/2021/09/23/you-get%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="​    在寻找视频素材的时候，网页端常常都会遇到无法下载视频的问题（免费视频），例如在bilibili等平台上，可以通过使用you-get工具下载视频。  环境配置需要使用python环境，这里使用anaconda配置环境进行管理 在anaconda官网安装anaconda，安装按照流程进行即可。  安装流程这里以anaconda为例 使用命令conda create -n xxx python">
+<meta property="og:description" content="​    在寻找视频素材的时候，网页端常常都会遇到无法下载视频的问题（免费视频），例如在bilibili等平台上，可以通过使用you-get工具下载视频。  环境配置需要使用python环境，这里使用anaconda配置环境进行管理（有python环境也可） 在anaconda官网安装anaconda，安装按照流程进行即可。  安装流程这里以anaconda为例 使用命令conda create">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/1f6a89d88a174cafb3522b9aadcdceb5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAWklfTw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/ae3a21873efd4046b342a55150f692d3.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAWklfTw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2021-09-23T13:49:43.083Z">
-<meta property="article:modified_time" content="2021-09-23T14:51:33.127Z">
+<meta property="article:modified_time" content="2021-09-23T14:54:51.039Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/1f6a89d88a174cafb3522b9aadcdceb5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAWklfTw==,size_20,color_FFFFFF,t_70,g_se,x_16">
@@ -171,14 +171,14 @@
       
         <p>​    在寻找视频素材的时候，网页端常常都会遇到无法下载视频的问题（免费视频），例如在bilibili等平台上，可以通过使用you-get工具下载视频。</p>
 <ul>
-<li><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>需要使用python环境，这里使用anaconda配置环境进行管理</p>
+<li><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>需要使用python环境，这里使用anaconda配置环境进行管理（有python环境也可）</p>
 <p>在<a target="_blank" rel="noopener" href="https://www.anaconda.com/products/individual#Downloads">anaconda官网</a>安装anaconda，安装按照流程进行即可。</p>
 </li>
 <li><h2 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h2><h4 id="这里以anaconda为例"><a href="#这里以anaconda为例" class="headerlink" title="这里以anaconda为例"></a>这里以anaconda为例</h4><ol>
 <li><p>使用命令<code>conda create -n xxx python=xxx</code>创建虚拟环境。然后使用<code>conda activate xxx</code>进入虚拟环境。</p>
 </li>
 <li><p>输入<code>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple you-get</code>使用清华镜像下载</p>
-<p>​    ps:pip3为python3版本下命令。 也可以使用其他源</p>
+<p>​    ps:pip3为python3版本下命令，有python环境也可不创建虚拟环境直接下载。 也可以使用其他源</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#豆瓣</span></span><br><span class="line">pip install -i http://pypi.douban.com/simple/ you-get</span><br><span class="line"><span class="comment">#清华</span></span><br><span class="line">pip install -i https://pypi.tuna.tsinghua.edu.cn/simple you-get</span><br></pre></td></tr></table></figure></li>
 <li><p>安装完成后可以使用<code>you-get -h</code>查看是否安装成功</p>
 </li>
